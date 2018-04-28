@@ -11,12 +11,8 @@ body {
 #giphies {
   border: 1px solid #e0e0e0;
   padding: 10;
+  text-align: center;
   min-height: 500px;
-}
-
-.left {
-  float: left;
-  margin-right: 10px;
 }
 
 .page-title {
@@ -25,4 +21,12 @@ footer {
   margin-top: 20px;
   text-align: center;
   font-size: 0.8em;
+}
+
+.loader{
+  background-image: url(./loader.gif);
+  display: block;
+  height: 200px;
+  background-repeat: no-repeat;
+  align-content: center;
 }

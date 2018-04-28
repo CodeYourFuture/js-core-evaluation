@@ -23,9 +23,10 @@ fetch(url)
 	.then(response => response.json())
 	.then(json => {
 		return json.data.forEach(obj => {
+            document.querySelector('.loader').style.display = "none";
             var p = document.createElement("p");
             p.innerHTML = `<a href="${obj.images.fixed_width_small.url}">
-                <img src="${obj.images.fixed_width_small.url}" class="left">
+                <img src="${obj.images.fixed_width_small.url}">
             </a>`;
 			giphies.appendChild(p);
         })
