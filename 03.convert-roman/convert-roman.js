@@ -5,6 +5,19 @@
  */
 function convert(number) {
   // code
+  var convert = [
+    "0",
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+    "IX",
+    "X"
+  ];
+  return convert[number];
 }
-
 module.exports = convert;
