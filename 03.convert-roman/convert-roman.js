@@ -4,6 +4,8 @@
  * (only handle cases from 1 to 10)
  */
 function convert(number) {
+  var ones=['','I','II','III','IV','V','VI','VII','VIII','IX','X'];
+  return ones[number];
   // code
 }
 
