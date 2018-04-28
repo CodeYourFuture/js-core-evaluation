@@ -4,6 +4,8 @@
  * Think which array method we need to use (map, forEach, filter, find, every) 
  *
  */
-var findAlive = function(writers) {};
+var findAlive = function(writers) {
+    return writers.filter(person=>person.alive===true);
+};
 
 module.exports = findAlive;

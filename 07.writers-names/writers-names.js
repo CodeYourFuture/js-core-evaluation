@@ -4,6 +4,8 @@
  * 
  * Hint: which array method returns the same length of items
  */
-var getWritersNames = function(writers) {};
+var getWritersNames = function(writers) {
+    return writers.map(person=>`${person.firstName} ${person.lastName}`)
+};
 
 module.exports = getWritersNames;
