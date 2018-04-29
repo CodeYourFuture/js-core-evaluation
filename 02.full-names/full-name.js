@@ -3,11 +3,14 @@
  * It will return a full name with title
  * i.e. if passed "Mimi", "Popa", "Her Excellency"
  * then it will return "Her Excellency Mimi Popa"
- * 
+ *
  * Hint: Notice there is space after each argument, i.e. it is not HerExcellencyMimiPopa
  */
 function fullName(firstName, lastName, title) {
   // code
+  var space= " "
+  var result = title.concat(space).concat(firstName).concat(space).concat(lastName);
+  return result;
 }
 
 module.exports = fullName;
