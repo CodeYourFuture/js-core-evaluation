@@ -6,7 +6,22 @@
  * instead, we remove whatever letter is passed to the function
  */
 function removeLetter(sentence, letter) {
+  // var remove = sentence.replace(/r/g,'') 
+  // return remove;
+    var character = sentence.split("");
+  
+    var result = []; // code
+    character.forEach(function(character) {
+      if (!(character === letter)) {
+        result.push(character);
+      } else {
+        result.push("");
+      }
+    });
+  
+    return result.join("");
+   }
   // code
-}
+
 
 module.exports = removeLetter;

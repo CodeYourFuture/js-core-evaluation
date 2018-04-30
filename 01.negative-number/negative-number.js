@@ -6,7 +6,10 @@
  * Hints: How similar is this to  the previous function? you only need to behave differently IF the number is already negative (how do you check if a number is already negative)
  */
 function negativeNumber(number) {
+ if (number < 0) return number;
+ return number * -1;
+ }
   // code here
-}
+
 
 module.exports = negativeNumber;

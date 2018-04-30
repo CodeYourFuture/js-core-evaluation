@@ -6,6 +6,10 @@
  * Hints: Think what do  you need to do convert a number to its opposite (multiply by what?)
  */
 function oppositeNumber(number) {
+  if (number === 0) {
+    return 0;
+  }
+  return number * -1;
   // code here
 }
 
