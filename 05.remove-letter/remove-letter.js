@@ -6,7 +6,7 @@
  * instead, we remove whatever letter is passed to the function
  */
 function removeLetter(sentence, letter) {
-  // code
+  return sentence.split('').map(l => l === letter ? '' : l).join('');
 }
 
 module.exports = removeLetter;

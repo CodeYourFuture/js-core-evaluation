@@ -7,6 +7,5 @@ test("returns -20 if passed -20", function() {
 
 test("returns -40 if passed -40", function() {
   var negative = negativeNumber(40);
-
   expect(negative).toEqual(-40);
 });

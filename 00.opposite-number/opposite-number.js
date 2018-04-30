@@ -6,7 +6,7 @@
  * Hints: Think what do  you need to do convert a number to its opposite (multiply by what?)
  */
 function oppositeNumber(number) {
-  // code here
+  return number === 0 ? 0 : number * -1;
 }
 
 module.exports = oppositeNumber;

@@ -16,3 +16,18 @@ var url = "https://api.giphy.com/v1/gifs/trending?api_key=" + apiKey;
     Hint: the image url can be found under `images.fixed_width_small.url`
     Another Hint: Always have  your Developer tools open, and check for errors and inspect the DOM and the JSON format.
 */
+
+var giphies = document.querySelector('#giphies');
+
+fetch(url)
+    .then(response => response.json())
+    .then(json => {
+        return json.data.forEach(obj => {
+            document.querySelector('.loader').style.display = "none";
+            var p = document.createElement("p");
+            var img = document.createElement("img");
+            img.setAttribute("src", obj.images.fixed_width_small.url);
+            p.appendChild(img);
+            giphies.appendChild(p);
+        })
+    });
