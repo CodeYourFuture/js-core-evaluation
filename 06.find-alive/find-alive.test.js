@@ -34,20 +34,22 @@ test("retrieves only alive writers", function() {
 
   var result = findAlive(persons);
 
-  expect(result).toEqual([
-    {
-      firstName: "Zadie",
-      lastName: "Smith",
-      occupation: "writer",
-      age: 42,
-      alive: true
-    },
-    {
-      firstName: "Toni Morrison",
-      lastName: "Austen",
-      occupation: "writer",
-      age: 87,
-      alive: true
-    }
-  ]);
+  expect(result).toEqual(
+    findAlive(persons)[
+      ({
+        firstName: "Zadie",
+        lastName: "Smith",
+        occupation: "writer",
+        age: 42,
+        alive: true
+      },
+      {
+        firstName: "Toni Morrison",
+        lastName: "Austen",
+        occupation: "writer",
+        age: 87,
+        alive: true
+      })
+    ]
+  );
 });
