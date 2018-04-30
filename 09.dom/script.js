@@ -16,3 +16,17 @@ var url = "https://api.giphy.com/v1/gifs/trending?api_key=" + apiKey;
     Hint: the image url can be found under `images.fixed_width_small.url`
     Another Hint: Always have  your Developer tools open, and check for errors and inspect the DOM and the JSON format.
 */
+fetch(url)
+  .then(function(data) {
+    return data.json();
+  })
+  .then(function(snap) {
+    var frameBox = document.querySelector("#snap");
+
+    snap.data.forEach(giphy => {
+      var snappyURL = giphy.images.fixed_width_small.url;
+      var image = document.createElement("img");
+      image.setAttribute("src", snappyURL);
+      frameBox.appendChild(image);
+    });
+  });
