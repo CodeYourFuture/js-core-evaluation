@@ -6,7 +6,7 @@
  */
 var findAlive = function(writers) {
   return writers.filter(function(writer) {
-    writer.alive === true;
+    return writer.alive === true;
   });
 };
 
