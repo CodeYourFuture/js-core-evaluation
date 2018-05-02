@@ -4,8 +4,17 @@
  * 
  * Hint: Think how you would do this on paper, is there a JavaScript string method to help you do the same?
  */
-var isPalindrome = function(word) {
+var isPalindrome = function (word) {
   // code
+  var reverse = word.split("").reverse().join("")
+  if (word === reverse) {
+    return true;
+
+  } else {
+    return false;
+  }
+
+
 };
 
 module.exports = isPalindrome;
