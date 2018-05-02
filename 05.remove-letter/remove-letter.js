@@ -7,6 +7,9 @@
  */
 function removeLetter(sentence, letter) {
   // code
+  var removed = sentence.split(letter).join("");
+  return removed;
+
 }
 
 module.exports = removeLetter;

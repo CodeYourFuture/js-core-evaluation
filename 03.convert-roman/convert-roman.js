@@ -4,6 +4,21 @@
  * (only handle cases from 1 to 10)
  */
 function convert(number) {
+  var romanNumber = [
+    "0",
+    "I",
+    "II",
+    "III",
+    "IV",
+    "V",
+    "VI",
+    "VII",
+    "VIII",
+    "IX",
+    "X"];
+  return romanNumber[number]
+
+
   // code
 }
 
