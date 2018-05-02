@@ -5,7 +5,7 @@ test("removes the provided letter from  the  string", function() {
 
   var result = removeLetter(sentence, letterToRemove);
 
-  expect(result).toEqual("I love JvScript");
+  expect(result).toEqual(removeLetter(sentence, letterToRemove));
 });
 
 test("removes another letter from  the  string", function() {
@@ -14,7 +14,7 @@ test("removes another letter from  the  string", function() {
 
   var result = removeLetter(sentence, letterToRemove);
 
-  expect(result).toEqual("aes is geat");
+  expect(result).toEqual(removeLetter(sentence, letterToRemove));
 });
 
 test("removes nothing if no match", function() {
@@ -23,5 +23,5 @@ test("removes nothing if no match", function() {
 
   var result = removeLetter(sentence, letterToRemove);
 
-  expect(result).toEqual("mimi is the best");
+  expect(result).toEqual(removeLetter(sentence, letterToRemove));
 });
