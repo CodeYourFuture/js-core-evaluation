@@ -7,7 +7,7 @@
  * Hint: Notice there is space after each argument, i.e. it is not HerExcellencyMimiPopa
  */
 function fullName(firstName, lastName, title) {
-  // code
+return `${title} ${firstName} ${lastName}`;
 }
 
 module.exports = fullName;
