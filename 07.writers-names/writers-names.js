@@ -6,9 +6,9 @@
  */
 var getWritersNames = function(writers) {
   var result = [];
-  writers.forEach(function(writer) {
-    result.push(writer.firstName + " " + writer.lastName);
-  });
+  writers.forEach(writer =>
+    result.push(writer.firstName + " " + writer.lastName)
+  );
   return result;
 };
 

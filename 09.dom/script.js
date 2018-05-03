@@ -4,9 +4,7 @@ var apiKey = "Scwv1Ey9zWw786giXlrtc75M68oCIj2j";
 var url = "https://api.giphy.com/v1/gifs/trending?api_key=" + apiKey;
 var giphiesContainer = document.querySelector("#giphies");
 fetch(url)
-  .then(function(response) {
-    return response.json();
-  })
+  .then(response => response.json())
   .then(function(giphies) {
     giphies.data.forEach(function(giph) {
       var giphList = document.createElement("li");

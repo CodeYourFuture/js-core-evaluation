@@ -5,9 +5,7 @@
  *
  */
 var findAlive = function(writers) {
-  return writers.filter(function(writer) {
-    return writer.alive === true;
-  });
+  return writers.filter(writer => writer.alive === true);
 };
 
 module.exports = findAlive;
