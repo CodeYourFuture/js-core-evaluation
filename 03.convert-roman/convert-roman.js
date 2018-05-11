@@ -3,8 +3,10 @@
  *
  * (only handle cases from 1 to 10)
  */
+
 function convert(number) {
-  // code
+  var myArray = [, "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX", "X"];
+  return myArray[number];
 }
 
 module.exports = convert;
